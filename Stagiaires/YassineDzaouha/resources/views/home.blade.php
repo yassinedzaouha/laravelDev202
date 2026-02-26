@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"></head> -->
+    <title>Accueil - MegaShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    @include("../partials/header")
-    
+    <header>
+        <div class="header-content">
+            <div class="logo">MegaShop</div>
+            <nav>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="pages/informatique.html">Informatique</a></li>
+                    <li><a href="pages/petit-electromenager.html">Petit Électroménager</a></li>
+                    <li><a href="pages/grand-electromenager.html">Grand Électroménager</a></li>
+                    <li><a href="/cgv">CGV</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <div class="hero">
             <h1>Bienvenue chez MegaShop</h1>
@@ -21,17 +36,17 @@
                 <div class="category-card">
                     <h3>💻 Informatique</h3>
                     <p>Ordinateurs, laptops, accessoires informatiques et bien plus...</p>
-                    <a href="/categories/informatique" class="btn">Voir les produits</a>
+                    <a href="pages/informatique.html" class="btn">Voir les produits</a>
                 </div>
                 <div class="category-card">
                     <h3>🍳 Petit Électroménager</h3>
                     <p>Cafetières, grille-pain, mixeurs, robots culinaires...</p>
-                    <a href="/categories/petit-electromenager" class="btn">Voir les produits</a>
+                    <a href="pages/petit-electromenager.html" class="btn">Voir les produits</a>
                 </div>
                 <div class="category-card">
                     <h3>❄️ Grand Électroménager</h3>
                     <p>Réfrigérateurs, lave-linge, lave-vaisselle, fours...</p>
-                    <a href="/categories/grand-electromenager" class="btn">Voir les produits</a>
+                    <a href="pages/grand-electromenager.html" class="btn">Voir les produits</a>
                 </div>
             </div>
         </section>
@@ -69,6 +84,15 @@
             </div>
         </section>
     </main>
-    @include("../partials/footer")
+
+    <footer>
+        <p>&copy; 2026 MegaShop - Tous droits réservés</p>
+        <div class="footer-links">
+            <a href="pages/cgv.html">CGV</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="#">Mentions Légales</a>
+        </div>
+        <p><strong>Email :</strong> info@megashop.com | <strong>Téléphone :</strong> +212 1 23 45 67 89</p>
+    </footer>
 </body>
 </html>
